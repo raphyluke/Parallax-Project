@@ -28,3 +28,17 @@ window.addEventListener("scroll", function() {
 });
 
 
+setInterval(function() {
+    // check if we are on top of the page
+    var scrolledHeight = window.scrollY;
+    if (scrolledHeight == 0) {
+        parallaxbutton.style.zIndex = 50;
+    }
+    else {
+        parallaxbutton.style.zIndex = 0;
+    }
+}, 100);
+
+
+
+
