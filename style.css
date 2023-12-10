@@ -85,3 +85,48 @@ body {
     /*caps*/
     text-transform: capitalize;
 }
+
+.text-section {
+    position: relative;
+    height: 1000px;
+    width: 1440px;
+    margin: 0 auto;
+    color: #fff;
+    padding: 100px 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.text-section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.text-section-center {
+    text-align: center;
+}
+
+/* animation from top to bottom */
+@keyframes fromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.fromTop {
+    animation: fromTop 1s ease-in-out;
+}
